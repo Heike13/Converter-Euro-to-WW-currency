@@ -1,0 +1,24 @@
+@use '../../styles/variables' as v;
+
+.app {
+  background: v.$color-light;
+  color: v.$color;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-height: 90%;
+  max-width: 480px;
+  width: 90vw;
+}
+
+.main-wrapper {
+  flex-grow: 1;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s linear;
+
+  .is-open & {
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+}

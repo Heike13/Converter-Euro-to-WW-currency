@@ -1,0 +1,13 @@
+@use 'sass:color';
+
+$color: #bb5432;
+
+$color-alt: color.scale($color, $lightness: 70%);
+$color-light: #fff;
+
+$font-sans: 'League Spartan', sans-serif;
+
+$gutter: 2.4rem; // 10px * 2.4 = 24px;
+
+$delay-fast: 0.2s;
+$delay-slow: 1s;
